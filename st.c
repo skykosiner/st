@@ -1311,7 +1311,7 @@ tsetchar(Rune u, const Glyph *attr, int x, int y)
 
 	term.dirty[y] = 1;
 	line[x] = *attr;
-	line[x].u = u;
+    line[x].u = u;
 }
 
 void

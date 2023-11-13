@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "mono:pixelsize=20:antialias=true:autohint=true";
-static char *font2[] = { "NotoColorEmoji:pixelsize=10:antialias=true:autohint=true" };
+static char *font = "FiraCodeNerdFontMono:pixelsize=25:antialias=true:autohint=true";
+static char *font2[] = { "NotoColorEmoji:pixelsize=15:antialias=true:autohint=true" };
 static int borderpx = 2;
 
 /*
@@ -112,32 +112,32 @@ float alphaOffset = 0.0;
 float alphaUnfocus;
 
 /* Terminal colors (16 first used in escape sequence) */
-// static const char *colorname[] = {
-	// "#282828", /* hard contrast: #1d2021 / soft contrast: #32302f */
-	// "#cc241d",
-	// "#98971a",
-	// "#d79921",
-	// "#458588",
-	// "#b16286",
-	// "#689d6a",
-	// "#a89984",
-	// "#928374",
-	// "#fb4934",
-	// "#b8bb26",
-	// "#fabd2f",
-	// "#83a598",
-	// "#d3869b",
-	// "#8ec07c",
-	// "#ebdbb2",
-	// [255] = 0,
+static const char *colorname[] = {
+	"#282828", /* hard contrast: #1d2021 / soft contrast: #32302f */
+	"#cc241d",
+	"#98971a",
+	"#d79921",
+	"#458588",
+	"#b16286",
+	"#689d6a",
+	"#a89984",
+	"#928374",
+	"#fb4934",
+	"#b8bb26",
+	"#fabd2f",
+	"#83a598",
+	"#d3869b",
+	"#8ec07c",
+	"#ebdbb2",
+	[255] = 0,
 	/* more colors can be added after 255 to use with DefaultXX */
-	// "#add8e6", /* 256 -> cursor */
-	// "#555555", /* 257 -> rev cursor*/
-	// "#010101", /* 258 -> bg */
-	// "#ebdbb2", /* 259 -> fg */
-// };
+	"#add8e6", /* 256 -> cursor */
+	"#555555", /* 257 -> rev cursor*/
+	"#010101", /* 258 -> bg */
+	"#ebdbb2", /* 259 -> fg */
+};
 
-#include "/home/sky/.cache/wal/colors-wal-st.h"
+// #include "/home/sky/.cache/wal/colors-wal-st.h"
 
 /*
  * Default colors (colorname index)

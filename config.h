@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "FiraCodeNerdFontMono:pixelsize=25";
+static char *font = "UbuntuMono Nerd Font:pixelsize=25";
 static char *font2[] = { "Noto Color Emoji:pixelsize=22" };
 static int borderpx = 2;
 
@@ -107,7 +107,7 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-float alpha = 0.7;
+float alpha = 0.8;
 float alphaOffset = 0.0;
 float alphaUnfocus;
 
@@ -240,7 +240,7 @@ static MouseShortcut mshortcuts[] = {
 };
 
 /* Internal keyboard shortcuts. */
-#define MODKEY Mod4Mask
+#define MODKEY Mod1Mask
 #define TERMMOD (ControlMask|ShiftMask)
 
 static char *openurlcmd[] = { "/bin/sh", "-c", "st-urlhandler -o", "externalpipe", NULL };
